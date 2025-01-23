@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="font-serif text-xl mb-4">ASIF KHAN</h3>
+            <h3 className="font-serif text-xl mb-4">MOHAMMAD ASIF KHAN</h3>
             <p className="text-gray-300">
               Multimedia Journalist based in New Delhi, specializing in defense news and national security.
             </p>
@@ -36,17 +36,17 @@ const Footer = () => {
             <div className="space-y-2">
               <a href="mailto:contact@example.com" className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors">
                 <Mail size={18} />
-                contact@example.com
+                asifwork76@gmail.com
               </a>
               <a href="tel:+1234567890" className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors">
                 <Phone size={18} />
-                +1 (234) 567-890
+                +91 9215000721
               </a>
               <div className="flex space-x-4 mt-4">
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <a href="https://www.linkedin.com/in/mohammad-asif-khan-5b1a5420a/" className="text-gray-300 hover:text-white transition-colors">
                   <Linkedin size={24} />
                 </a>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <a href="https://x.com/Mohammad_Asif23" className="text-gray-300 hover:text-white transition-colors">
                   <Twitter size={24} />
                 </a>
               </div>

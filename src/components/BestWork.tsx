@@ -1,18 +1,20 @@
 const works = [
   {
-    title: "The Hidden Cost",
+    title: "Guns and Power",
     category: "Investigation",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+    image: "/assets/bw_img.png",
+    link: "/Photo.pdf", // Only the file URL here
   },
   {
-    title: "Digital Revolution",
+    title: "Fading designs of Bhadohi",
     category: "Documentary",
-    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
+    image: "/assets/doc_img1.png",
+    link:"https://www.youtube.com/watch?v=4hRF4CFS8ww",
   },
   {
-    title: "Future of News",
+    title: "How India moved closer to Israel under the Narendra Modi government.", 
     category: "Feature",
-    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
+    image: "/assets/bw_img2.png",
   },
 ];
 
@@ -23,6 +25,13 @@ const BestWork = () => {
         <h2 className="font-serif text-4xl mb-12 text-primary text-center">Best Work</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {works.map((work, index) => (
+             <a
+             href={work.link}
+             key={index}
+             download={work.title} // This sets the filename for the download
+             target="_blank"
+             rel="noopener noreferrer"
+           >
             <div key={index} className="group relative overflow-hidden rounded-lg">
               <img
                 src={work.image}
@@ -36,6 +45,7 @@ const BestWork = () => {
                 </div>
               </div>
             </div>
+            </a>
           ))}
         </div>
       </div>

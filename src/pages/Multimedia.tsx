@@ -4,26 +4,23 @@ import { Video, Headphones, Image } from "lucide-react";
 const MultimediaPage = () => {
   const stories = [
     {
-      title: "The Urban Development Crisis",
+      title: "Displaced, Forgotten, Abandoned: Kairana’s Riot Victims | Article 14",
       type: "video",
-      description: "A deep dive into urban development challenges in major cities",
-      date: "2024-02-15",
-      duration: "15:30",
+      description: "We visited Nahid Colony located on the outskirts of Kairana which consists mostly of riot-affected families who fled the horrors of the Muzaffarnagar riots which took place in 2013.",
+      date: "Mar 12, 2022",
+      duration: "04:25",
+      link:"https://www.youtube.com/watch?v=3h2s4A-eS3g",
     },
+
     {
-      title: "Voices from the Valley",
+      title: "The Food Chain",
       type: "audio",
-      description: "Podcast series exploring Silicon Valley's impact on society",
-      date: "2024-02-10",
-      duration: "25:45",
+      description: "Is the food you’re eating what you think it is?         -The Food Chain: A visit to a spice testing lab reveals how fraudsters tamper with food to make money",
+      date: "Fri 19 May 2023",
+      duration: "04:02",
+      link:"https://www.bbc.co.uk/programmes/w3ct4v6p",
     },
-    {
-      title: "Climate Change: Visual Story",
-      type: "image",
-      description: "Photo essay documenting climate change effects",
-      date: "2024-02-05",
-      duration: "12 images",
-    },
+   
   ];
 
   const getIcon = (type: string) => {
@@ -42,8 +39,9 @@ const MultimediaPage = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-4xl font-serif font-bold mb-8">Multimedia Stories</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
         {stories.map((story, index) => (
+          <a href={story.link} key={index} target="_blank" rel="noopener noreferrer">
           <Card key={index} className="hover:shadow-lg transition-shadow">
             <CardHeader>
               <div className="flex items-center justify-between">
@@ -57,6 +55,7 @@ const MultimediaPage = () => {
               <p className="text-sm text-muted-foreground">{story.duration}</p>
             </CardContent>
           </Card>
+          </a>
         ))}
       </div>
     </div>

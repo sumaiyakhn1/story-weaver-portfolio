@@ -56,19 +56,19 @@ const ContactPage = () => {
           <CardContent className="space-y-4">
             <div className="flex items-center gap-3">
               <Mail className="h-5 w-5 text-primary" />
-              <span>john.doe@example.com</span>
+              <span>asifwork76@gmail.com</span>
             </div>
             <div className="flex items-center gap-3">
               <Phone className="h-5 w-5 text-primary" />
-              <span>+1 (555) 123-4567</span>
+              <span>+91 9215000721</span>
             </div>
             <div className="flex items-center gap-3">
               <Linkedin className="h-5 w-5 text-primary" />
-              <a href="#" className="hover:text-primary">LinkedIn Profile</a>
+              <a href="https://www.linkedin.com/in/mohammad-asif-khan-5b1a5420a/" className="hover:text-primary">LinkedIn Profile</a>
             </div>
             <div className="flex items-center gap-3">
               <Twitter className="h-5 w-5 text-primary" />
-              <a href="#" className="hover:text-primary">Twitter Profile</a>
+              <a href="https://x.com/Mohammad_Asif23" className="hover:text-primary">Twitter Profile</a>
             </div>
           </CardContent>
         </Card>

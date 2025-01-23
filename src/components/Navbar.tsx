@@ -19,7 +19,7 @@ const Navbar = () => {
             to="/" 
             className="font-serif text-xl text-primary hover:text-accent transition-colors duration-300"
           >
-            ASIF KHAN
+            MOHAMMAD ASIF KHAN
           </Link>
           
           <button 
