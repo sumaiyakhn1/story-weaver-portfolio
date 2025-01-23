@@ -23,7 +23,7 @@ const AboutSection = () => {
 Beyond Force Magazine, I freelance with Indian and international outlets like TRT World, Mondoweiss, Middle East Monitor, BBC World Service, and others. Using video, audio, and written formats, I aim to tell impactful stories that matter.
             </p>
             
-            <a href="/assets/cv.pdf" download="CV- Mohammad Asif Khan.pdf">
+            <a href="/CV- Mohammad Asif Khan.pdf" download="CV- Mohammad Asif Khan">
   <Button className="bg-accent hover:bg-accent/90">
     Download CV
   </Button>

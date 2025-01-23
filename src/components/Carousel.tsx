@@ -1,19 +1,23 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Image1 from '/assets/c_img1.jpeg';
+import Image2 from '/assets/c_img2.jpeg';
+import Image3 from '/assets/c_img3.jpeg';
+
 
 const slides = [
   {
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+    image: Image2,
     title: "Breaking News Investigation",
     description: "Award-winning coverage of local corruption scandal",
   },
   {
-    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
+    image: Image3,
     title: "Documentary Series",
     description: "Inside the tech revolution changing our world",
   },
   {
-    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
+    image: Image1,
     title: "Digital Innovation",
     description: "Leading the future of digital journalism",
   },
