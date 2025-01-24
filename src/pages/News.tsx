@@ -136,7 +136,7 @@ const NewsPage = () => {
         <TabsList className="grid w-full grid-cols-3">
           <TabsTrigger value="News_features">News_features</TabsTrigger>
           <TabsTrigger value="Defence">Defence</TabsTrigger>
-          <TabsTrigger value="Palestine_reportage">Palestine_Reportage</TabsTrigger>
+          <TabsTrigger value="Palestine_reportage">PalestineStory</TabsTrigger>
         </TabsList>
         {Object.entries(articles).map(([category, items]) => (
           <TabsContent key={category} value={category}>
