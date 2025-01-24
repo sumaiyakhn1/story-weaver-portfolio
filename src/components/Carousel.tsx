@@ -2,24 +2,24 @@ import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image1 from '/assets/c_img1.jpeg';
 import Image2 from '/assets/c_img2.jpeg';
-import Image3 from '/assets/c_img3.jpeg';
+import Image3 from '/assets/c_img5.jpeg';
 
 
 const slides = [
   {
     image: Image2,
-    title: "Breaking News Investigation",
-    description: "Award-winning coverage of local corruption scandal",
-  },
-  {
-    image: Image3,
-    title: "Documentary Series",
-    description: "Inside the tech revolution changing our world",
+    title: "News Investigation",
+    description: "Uncovering the truth, one story at a time.",
   },
   {
     image: Image1,
-    title: "Digital Innovation",
-    description: "Leading the future of digital journalism",
+    title: "Documentary Series",
+    description: "Stories that shape our world.",
+  },
+  {
+    image: Image3,
+    title: "Podcast Series",
+    description: "Sharing stories that matter.",
   },
 ];
 
@@ -53,6 +53,7 @@ const Carousel = () => {
           <img
             src={slide.image}
             alt={slide.title}
+            loading="lazy"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black bg-opacity-40">

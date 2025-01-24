@@ -40,6 +40,7 @@ const DocumentariesPage = () => {
             <img 
               src={doc.thumbnail} 
               alt={doc.title} 
+              loading="lazy"
               className="w-full h-48 object-cover"
             />
             <CardHeader>

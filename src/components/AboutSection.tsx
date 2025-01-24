@@ -10,6 +10,7 @@ const AboutSection = () => {
             <img
               src="/assets/asif.png"
               alt="Asif Khan"
+              loading="lazy"
               className="rounded-lg shadow-lg w-full h-[400px] object-cover"
             />
           </div>

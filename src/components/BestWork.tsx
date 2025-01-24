@@ -22,7 +22,7 @@ const BestWork = () => {
   return (
     <div className="py-16">
       <div className="container mx-auto px-4">
-        <h2 className="font-serif text-4xl mb-12 text-primary text-center">Best Work</h2>
+        <h2 className="font-serif text-4xl mb-12 text-primary text-center">Selected Work</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {works.map((work, index) => (
              <a
@@ -36,6 +36,7 @@ const BestWork = () => {
               <img
                 src={work.image}
                 alt={work.title}
+                loading="lazy"
                 className="w-full h-[300px] object-cover transition-transform duration-300 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
