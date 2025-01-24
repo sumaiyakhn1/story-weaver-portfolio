@@ -134,7 +134,7 @@ const NewsPage = () => {
       <h1 className="text-4xl font-serif font-bold mb-8">News & Op-Eds</h1>
       <Tabs defaultValue="News_features" className="w-full">
         <TabsList className="grid w-full grid-cols-3">
-          <TabsTrigger value="News_features">News_features</TabsTrigger>
+          <TabsTrigger value="News_features">NewsFeatures</TabsTrigger>
           <TabsTrigger value="Defence">Defence</TabsTrigger>
           <TabsTrigger value="Palestine_reportage">PalestineStory</TabsTrigger>
         </TabsList>
